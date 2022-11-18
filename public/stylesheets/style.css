@@ -13,28 +13,43 @@ html {
 
 a {
     text-decoration: none;
-    color: #225ca3;
+    color: #11253c;
     font-weight: bold;
     transition: color .1s;
 }
 
 a:hover {
-    color: #3486eb;
+    color: #0d4f74;
+}
+
+h2 {
+    font-size: 40px;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-put;
+    font-weight: 200;
+    color: white;
+    text-align: center;
 }
 
 button {
-    background-color: #225ca3;
+    appearance: none;
+    outline: 0;
+    background-color: white;
     border: 0;
-    padding: 1%;
-    color: white;
-    font-weight: bold;
-    transition: background-color .1s;
+    padding: 10px 15px;
+    color: #0d4f74;
+    border-radius: 3px;
+    width: 250px;
     cursor: pointer;
-    border-radius: 5px;
+    font-size: 18px;
+    transition-duration: 0.25s;
+    margin: 0 auto 10px auto;
+    display: block;
+    text-align: center;
 }
 
 button:hover {
-    background-color: #3486eb;
+    background-color: rgb(245, 247, 249);
 }
 
 .post-list {
@@ -42,17 +57,34 @@ button:hover {
     padding: 0;
 }
 
-textarea,
+/* textarea,
 input {
     padding: .5%;
     border-radius: 5px;
     border: 1px solid #ccc;
+} */
+
+input {
+    appearance: none;
+    outline: 0;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 250px;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 0 auto 10px auto;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    transition-duration: 0.25s;
+    font-weight: 300;
 }
 
 textarea:focus,
 input:focus {
     outline: none;
-    border: 1px solid #3486eb;
+    border: 1px solid #11253c;
 }
 
 textarea {
@@ -76,7 +108,7 @@ form label {
     display: flex;
     flex-direction: column;
     background: #50a3a2;
-    background: -webkit-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
+    background: -webkit-linear-gradient(top left, #50a3a2 7%, #53e3a6 100%);
 }
 
 header {
@@ -130,7 +162,7 @@ main {
 .post .title span {
     font-style: italic;
     font-size: 90%;
-    color: #7d7d7d;
+    color: #125950;
 }
 
 .edit-link {
@@ -180,4 +212,16 @@ footer {
     justify-content: center;
     padding: 1%;
     font-size: 110%;
+}
+
+fieldset input {
+    text-align: center;
+}
+
+fieldset {
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    color: white;
+    border-color: #ccc;
 }
