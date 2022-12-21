@@ -1,18 +1,28 @@
-<form class="login-form">
+<form id="login-form">
     {{!-- title in black container --}}
     <div class="title">
         <h2>LOGIN</h2>
     </div>
     {{!-- actual form beneath title container --}}
-    <div>
-        <label for="email-login">Email:</label>
-        <input type="text" id="email-login" />
 
+    <div>
+        <label for="username-login">Username:</label>
+        <input type="text" id="username-login" />
+    </div>
+
+    <div>
         <label for="password-login">Password:</label>
         <input type="password" id="password-login" />
-
-        <button type="submit">Login!</button>
-        {{!-- TODO: Add route to link to Sign Up Form Page --}}
-        <a href="/">Sign Up Instead</a>
     </div>
+
+    <div>
+        <button type="submit">Login!</button>
+    </div>
+
+    <div>
+        <a href="/signup">Sign Up Instead</a>
+    </div>
+
 </form>
+
+{{!-- TODO: Add script for login.js --}}
