@@ -18,7 +18,7 @@ async function signupHandler(event) {
             console.log('Sign Up Successful');
             document.location.replace('/dashboard');
         } else {
-            alert('That username is already taken! Choose another one.');
+            alert(response.statusText);
         }
     }
 };
